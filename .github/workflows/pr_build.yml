@@ -1,11 +1,10 @@
-# A workflow to build and upload APKs for pull requests
-name: PR Build
+# A workflow to build and upload APKs
+name: APK Build
 
 on:
-workflow_dispatch:
-  pull_request:
-    types: [ opened, synchronize, reopened ]
-    branches: [ master ]
+  workflow_dispatch:
+    # This event allows manual triggering of the workflow
+    # You can manually trigger this workflow through the GitHub Actions UI or API
 
 # Only allow the latest build to run for a given PR, and cancel any previous builds
 concurrency:
