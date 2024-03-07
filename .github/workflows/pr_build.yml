@@ -5,7 +5,8 @@ on:
   workflow_dispatch:
     # This event allows manual triggering of the workflow
     # You can manually trigger this workflow through the GitHub Actions UI or API
-
+env:
+  UPLOAD_PR_ARTIFACTS: 'true'  # Define the variable here
 
 
 jobs:
