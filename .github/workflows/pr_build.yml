@@ -6,10 +6,7 @@ on:
     # This event allows manual triggering of the workflow
     # You can manually trigger this workflow through the GitHub Actions UI or API
 
-# Only allow the latest build to run for a given PR, and cancel any previous builds
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+
 
 jobs:
   build:
